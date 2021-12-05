@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+  head
+    title= 'Node.js Template'
+  body
+  h1 Performance Test
+
+<br />
+
+p Open two terminals in paralel <br/>
+p On first terminal your server will running 
+hr
+ul <b> Write in second terminal followings : </b> 
+li npx autocannon -c 10 -d 10 -p 10 http://localhost:3000 
+li npx autocannon -c 10 -d 10 -p 10 http://localhost:3000/add
+li npx autocannon -c 10 -d 10 -p 10 http://localhost:3000/download
+
+p to obtain performance tests 

@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+  head
+    title= 'Node.js Template'
+  body
+  ul
+  each val, index in data
+    li= index + ': ' + val
+end
+
+      form(action="/add",method="post")
+                label(for="name") Name 
+                input#name(type="text", name="name")
+                label(for="details") Enter Your Details  
+                input#details(type="text", name="details")
+                
+                button(type="submit") Submit
